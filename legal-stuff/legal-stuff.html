@@ -57,6 +57,16 @@ body {
     float: none;
   }
 }
+
+ .footer {
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
     p.legal {
     margin: 15px;}
 
@@ -65,7 +75,7 @@ body {
 
     p.form {
     margin: 15px;}
-
+}
 </style>
 </head>
 <body>
@@ -78,9 +88,11 @@ body {
     <a href="../contact/contact.html">CONTACT</a>
   </div>
 </div>
-    <div style="text-align:left">
+<!--begin NDA-->
+    <div style="text-align:center">
     <h2>ONE-WAY NON-DISCLOSURE AGREEMENT</h2>
-
+    </div>
+    <div style="text-align:left">
     <p class="legal">
 
         At this phase in our development we are susceptible to IP theft. As a standard practice we need our test group to provide a non-disclosure agreement, which simply states; don't share this software with anyone outside of the Fluxor development team. By clicking submit you are designated as the "Recipient", and FLUXOR, LLC, a limited liability company organized under the laws of the state of DELAWARE with an office at 5141 CALIFORNIA AVE., STE #200, IRVINE, CA 92614. is designated as the “Discloser”.
@@ -124,14 +136,15 @@ body {
                         out of, or in connection with, this Agreement.</li>
                 </ol>
         </p>
-    <p class="form">
-        Fields marked with an * are required<br />
-        <br />
-        <form action="mailto:dev@fluxor.io">
-            <fieldset>
-                <legend>Contact details</legend>
-                <label>Date *<br />
-                    <input type="date" name="date"
+<!--begin form submission-->
+<p class="form">
+    Fields marked with an * are required<br />
+     <br />
+     <form action="mailto:dev@fluxor.io">
+         <fieldset>
+             <legend>Contact details</legend>
+             <label>Date *<br />
+                <input type="date" name="date"
                     required="required" /></label><br />
                 <label>First name *<br />
                     <input type="text" name="fname"
@@ -142,25 +155,13 @@ body {
                 <label>Email *<br />
                     <input type="email" name="email" /></label><br />
                     <input type="submit" value="Send Email" />
-            </fieldset>
-        </form>
-        </p></div>
+         </fieldset>
+     </form>
+</p></div>
 </body>
- <style>
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0%;
-    width: 100%;
-
-    background-color: white;
-    color: black;
-    text-align: center;
-    z-index: -5;
-}
-</style>
-
+<!--begin footer-->
 <div class="footer">
-  <p>© Fluxor | 2017 - 2018</p>
+  <p>© 2018 Fluxor, LLC. All Rights Reserved</p>
 </div>
+
 </html>
